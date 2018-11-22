@@ -1,0 +1,60 @@
+<!doctype html>
+<head>
+	<meta charset="UTF-8">
+	<title>Kontakt</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+	
+		<div id="logo"><a href="Pocetna.html" class="fade-In"><img src="img\logo.png"></a></div>
+		<nav>
+		<ul class="nav_menu">
+			<li><a href="Pocetna.html"class="fade-In" class="fade-In">Početna</a></li>
+			<li><a href="about.html" class="fade-In">O nama</a></li>
+			<li><a href="Kontakt.html"  id="active" class="fade-In">Kontaktiraj nas</a></li>
+			<input type="text" placeholder="Pretraži članke" class="fade-In">
+			<button type="submit" class="fade-In"><i class="fa fa-search"></i></button>
+		</ul>
+		</nav>
+   </header>
+   <div class="clear"></div>
+	<div id="welcomeDiv">
+            <form id="contact_form" name="contact_form" method="post" action="PostEmail.php">
+                <fieldset>
+                    <legend>Pošalji nam poruku</legend>
+
+                    <table>
+                        <tr>
+                            <td><label for="Name">Ime</label></td>
+                            <td><input type="text" name="Name" id="Name" placeholder="Vaše ime" autofocus="autofocus" required /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Email">Email</label></td>
+                            <td><input type="email" name="Email" id="Email" placeholder="Email" required /></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="Message">Vaša poruka</label></td>
+                            <td><textarea name="Message" id="Message" cols="45" rows="5" placeholder="Vaša poruka"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><input type="reset" name="Reset" class="submit" value="Reset" />
+                                <input type="submit" name="Send" class="submit" value="Submit"/></td>
+
+                        </tr>
+
+                    </table>
+                </fieldset>
+
+
+            </form>
+        </div>
+            
+<footer>Copyright Mine</footer>
+</body>
+</html>
